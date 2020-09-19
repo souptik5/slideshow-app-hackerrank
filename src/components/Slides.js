@@ -22,11 +22,9 @@ function Slides({ slides, index, prevSlide, nextSlide, resetSlides }) {
     });
   };
 
-  const updateReset=()=>{
-    setItem({...item,
-        title: slides[0].title,
-        text: slides[0].text,
-    })}
+  const updateReset = () => {
+    setItem({ ...item, title: slides[0].title, text: slides[0].text });
+  };
 
   return (
     <div>

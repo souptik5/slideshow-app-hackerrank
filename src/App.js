@@ -6,7 +6,6 @@ import Slides from "./components/Slides";
 const title = "Slideshow App";
 
 function App({ slides }) {
-  // console.log(slides[0]);
   const [index, setIndex] = useState(0);
   const prevSlide = () => {
     setIndex(index - 1 % (slides.length));
